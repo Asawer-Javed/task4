@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid Layout Builder - Professional CSS Grid Visualization Tool</title>
+  <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/testimonials.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/responsiveness.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Professional CSS Grid Layout Builder tool for web developers to visualize and generate grid-based layouts with instant code generation">
+</head>
+<body>
+  <header>
+    <div class="intro">
+      <h1> Professional Grid Layout Builder</h1>
+      <p class="subtitle">The Ultimate Visual CSS Grid Development Environment</p>
+      <p class="developer">Created by <strong>Muhammad Attiq</strong> - Senior Web Developer & UI Specialist</p>
+      
+      <div class="header-features">
+        <div class="feature-card">
+          <i class="fas fa-bolt"></i>
+          <h3>Instant Visualization</h3>
+          <p>See your grid layout come to life as you design it</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-code"></i>
+          <h3>Real-time Code</h3>
+          <p>Get clean, production-ready HTML & CSS instantly</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Responsive Ready</h3>
+          <p>Build layouts that work across all devices</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+   
+    <p class="instructions">Click and drag to create blocks. Double-click to delete. Each new block will be automatically numbered with professional precision.</p>
+
+    <div class="theme-switch-container">
+      <button class="theme-switch" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+
+    <section class="tool-interface">
+      <div class="controls">
+        <label>Rows: <input type="number" id="rows" min="1" max="12" value="4" aria-label="Number of rows" /></label>
+        <label>Columns: <input type="number" id="cols" min="1" max="12" value="4" aria-label="Number of columns" /></label>
+        <button class="btn-generate" onclick="generateGrid()">Generate Grid</button>
+        <button class="btn-clear" onclick="clearBlocks()">Clear Blocks</button>
+      </div>
+
+      <div id="grid"></div>
+
+      <div class="code-container">
+        <div class="code-box">
+          <label>📄 Production-Ready HTML:</label>
+          <textarea id="htmlCode" readonly></textarea>
+        </div>
+        <div class="code-box">
+          <label>🎨 Optimized CSS:</label>
+          <textarea id="cssCode" readonly></textarea>
+        </div>
+      </div>
+    </section>
+<section class="tool-description">
+      <h2>Revolutionize Your CSS Grid Workflow</h2>
+      <p>This professional-grade Grid Layout Builder eliminates the guesswork from CSS Grid development. Designed for both beginners and experienced developers, our tool provides an intuitive visual interface that translates directly to clean, efficient code.</p>
+      
+      <div class="use-cases">
+        <h3>Perfect For:</h3>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Rapid prototyping of complex layouts</li>
+          <li><i class="fas fa-check-circle"></i> Teaching CSS Grid concepts visually</li>
+          <li><i class="fas fa-check-circle"></i> Client demonstrations and approvals</li>
+          <li><i class="fas fa-check-circle"></i> Optimizing existing grid structures</li>
+          <li><i class="fas fa-check-circle"></i> Cross-browser compatibility testing</li>
+        </ul>
+      </div>
+    </section>
+   <section class="testimonials">
+  <h2>What Professionals Say</h2>
+  <div class="testimonial-row">
+    <div class="testimonial-card">
+      <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson">
+      <p>"This tool cut our layout development time by 60%."</p>
+      <h4>Sarah Johnson</h4>
+      <p class="title">Lead Frontend Developer</p>
+    </div>
+    <div class="testimonial-card">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+      <p>"Best tool to explain grid concepts. My students love it!"</p>
+      <h4>Michael Chen</h4>
+      <p class="title">UI/UX Instructor</p>
+    </div>
+    <div class="testimonial-card">
+      <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Emily Davis">
+      <p>"Saves hours in design sprints. It's a must-have."</p>
+      <h4>Emily Davis</h4>
+      <p class="title">Product Designer</p>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer>
+    
+    
+    <div class="contact">
+      <h3>Let's Build Something Extraordinary</h3>
+      <p>Contact me to discuss your project requirements, get a quote, or schedule a consultation:</p>
+      <div class="social-links">
+        <a href="https://wa.me/923021183906" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+          <span>+92 302 1183906</span>
+        </a>
+        <a href="https://linkedin.com/in/muhammadattiqweb3" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+          <span>muhammadattiqweb3</span>
+        </a>
+        <a href="https://github.com/attiqzahoor" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+          <span>attiqzahoor</span>
+        </a>
+        <a href="mailto:contact@attiqmuhammad51@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+          <span>contact@attiqmuhammad51@gmail.com</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Muhammad Attiq. All rights reserved. | Web Development Solutions</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
