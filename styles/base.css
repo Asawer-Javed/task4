@@ -1,0 +1,47 @@
+:root {
+  --bg-primary: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  --bg-secondary: #ffffff;
+  --text-primary: #2c3e50;
+  --text-secondary: #34495e;
+  --accent-primary: #e74c3c;
+  --accent-secondary: #3498db;
+  --grid-bg: rgba(255, 255, 255, 0.9);
+  --block-bg: rgba(231, 76, 60, 0.2);
+  --block-border: #e74c3c;
+  --cell-border: #bdc3c7;
+  --btn-primary: #3498db;
+  --btn-hover: #2980b9;
+  --btn-clear: #e74c3c;
+  --btn-clear-hover: #c0392b;
+  --feature-card-bg: rgba(255, 255, 255, 0.8);
+  --testimonial-bg: rgba(255, 255, 255, 0.9);
+}
+
+body.dark {
+  --bg-primary: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+  --bg-secondary: #34495e;
+  --text-primary: #ecf0f1;
+  --text-secondary: #bdc3c7;
+  --grid-bg: rgba(52, 73, 94, 0.9);
+  --block-bg: rgba(231, 76, 60, 0.3);
+  --cell-border: #7f8c8d;
+  --feature-card-bg: rgba(52, 73, 94, 0.7);
+  --testimonial-bg: rgba(52, 73, 94, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
