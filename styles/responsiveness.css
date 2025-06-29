@@ -1,59 +1,472 @@
+/* RESPONSIVE STYLES FOR ALL SECTIONS */
 
+html,
+body {
+  width: 100vw;
+  min-width: 0;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* 2. HEADER & INTRO */
+@media (max-width: 1440px) {
+  .header-features,
+  .code-container,
+  #grid {
+    max-width: 100vw;
+    width: 100vw;
+  }
+}
+@media (max-width: 1200px) {
+  .header-features,
+  .code-container {
+    gap: 1.2rem;
+  }
+  #grid {
+    max-width: 100vw;
+    width: 100vw;
+  }
+}
+@media (max-width: 812px) {
+  .header-features {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    max-width: 100vw;
+    width: 100vw;
+  }
+  .feature-card {
+    width: 100%;
+    max-width: 320px;
+    padding: 1rem 0.5rem;
+    font-size: 0.98rem;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+}
 @media (max-width: 768px) {
   .header-features {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+    max-width: 100vw;
+    width: 100vw;
   }
-  
   .feature-card {
     width: 100%;
     max-width: 350px;
+    min-width: 0;
+    box-sizing: border-box;
   }
-  
-  .code-container {
+}
+@media (max-width: 600px) {
+  .feature-card {
+    padding: 1rem 1.2rem;
+    font-size: 0.95rem;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 1rem;
+  }
+  .subtitle {
+    font-size: 0.85rem;
+  }
+}
+
+/* 3. MAIN HEADING */
+@media (max-width: 812px) {
+  .main-heading {
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .main-heading {
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+  }
+}
+
+/* 4. TOOL DESCRIPTION & USE CASES */
+@media (max-width: 900px) {
+  .tool-description {
+    max-width: 100vw;
+    width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 812px) {
+  .tool-description {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    max-width: 100vw;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .use-cases {
+    padding: 0.7rem 0.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .tool-description {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 100vw;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 600px) {
+  .tool-description {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 100vw;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .use-cases {
+    padding: 1rem 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .tool-description h2 {
+    font-size: 1rem;
+  }
+}
+
+/* 5. CONTROLS */
+@media (max-width: 900px) {
+  .controls {
+    max-width: 100vw;
+    width: 100vw;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 812px) {
+  .controls {
     flex-direction: column;
+    align-items: stretch;
+    max-width: 100vw;
+    width: 100vw;
+    padding: 0.7rem;
+    gap: 0.7rem;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
   }
-  
+  .controls label {
+    width: 100%;
+    max-width: 180px;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
   .controls {
     flex-direction: column;
     align-items: center;
+    max-width: 100vw;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
   }
-  
   .controls label {
     width: 100%;
     max-width: 200px;
     justify-content: space-between;
   }
-  
-  .social-links {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-  
-  .social-links a {
-    width: 100%;
-    max-width: 250px;
-    justify-content: center;
+}
+@media (max-width: 600px) {
+  .controls {
+    padding: 0.5rem;
+    gap: 0.5rem;
+    max-width: 100vw;
+    width: 100vw;
+    box-sizing: border-box;
   }
 }
 
-@media (max-width: 480px) {
-  .intro h1 {
-    font-size: 2rem;
+/* 6. GRID & BLOCKS */
+@media (max-width: 1440px) {
+  #grid {
+    max-width: 100vw;
+    width: 100vw;
   }
-  
-  .subtitle {
+}
+@media (max-width: 1200px) {
+  #grid {
+    max-width: 100vw;
+    width: 100vw;
+  }
+}
+@media (max-width: 812px) {
+  #grid {
+    max-width: 100vw;
+    min-width: 0;
+    width: 100vw;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 768px) {
+  #grid {
+    max-width: 100vw;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+}
+
+/* 7. CODE OUTPUT BOXES */
+@media (max-width: 1440px) {
+  .code-container {
+    max-width: 100vw;
+    width: 100vw;
+  }
+}
+@media (max-width: 1200px) {
+  .code-container {
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 812px) {
+  .code-container {
+    flex-direction: column;
+    gap: 0.7rem;
+    max-width: 100vw;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .code-box {
+    min-width: 0;
+    width: 100%;
+    padding: 0.7rem 0.3rem;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 768px) {
+  .code-container {
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100vw;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 600px) {
+  .code-box {
+    padding: 1rem 0.5rem;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 480px) {
+  .code-box {
+    padding: 0.7rem 0.2rem;
+    min-width: 0;
+    width: 100%;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+  }
+}
+
+/* 9. FOOTER (all breakpoints, desktop to mobile) */
+@media (max-width: 1200px) {
+  .footer-container {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    gap: 2rem;
+  }
+  .footer-left,
+  .footer-right {
+    width: 48%;
+    margin-left: 0;
+  }
+  .footer-bottom {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+@media (min-width: 1201px) {
+  .footer-container {
+    gap: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-left {
+    margin-right: 5rem;
+  }
+  .footer-right {
+    margin-left: 5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .footer-left {
+    margin-right: 6rem;
+  }
+  .footer-right {
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 900px) {
+  .footer-container,
+  .footer {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    box-sizing: border-box;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    margin: 0;
+    flex: unset;
+  }
+  .footer-right {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-left h3,
+  .footer-right h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .footer-left p,
+  .social-links span {
+    font-size: 0.97rem;
+  }
+  .social-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .footer-bottom {
+    font-size: 0.85rem;
+    text-align: left;
+    padding: 0.5rem 1rem 0.2rem 1rem;
+  }
+}
+@media (max-width: 812px) {
+  .footer-container,
+  .footer {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.3rem;
+    padding: 0.7rem 0.3rem;
+    font-size: 0.97rem;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    box-sizing: border-box;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    margin: 0;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+  .social-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .footer-bottom {
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 0.7rem 0.3rem;
+    gap: 0.3rem;
+  }
+  .footer-left h3,
+  .footer-right h4 {
+    font-size: 1rem;
+  }
+  .footer-left p,
+  .social-links span {
+    font-size: 0.93rem;
+  }
+  .footer-bottom {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.3rem 0.1rem 0.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer-container,
+  .footer {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.2rem;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    box-sizing: border-box;
+  }
+  .footer-left h3,
+  .footer-right h4 {
     font-size: 1.1rem;
   }
-  
-  .tool-description h2, 
-  .testimonials h2,
-  footer h3 {
-    font-size: 1.5rem;
+  .footer-left p,
+  .social-links span {
+    font-size: 0.95rem;
   }
-  
-  .testimonial-card {
-    padding: 1.5rem;
+  .footer-bottom {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.3rem;
+  }
+}
+
+/* 10. LOADER */
+@media (max-width: 600px) {
+  .loader-card {
+    min-width: 90vw;
+    padding: 2rem 1rem;
+  }
+  .loader-text {
+    font-size: 1.3rem;
+  }
+  .loader-count {
+    font-size: 1.2rem;
+  }
+}
+
+/* 11. PREVENT HORIZONTAL SCROLL ON BODY FOR ALL SMALL SCREENS */
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
   }
 }
