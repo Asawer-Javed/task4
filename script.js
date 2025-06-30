@@ -225,10 +225,24 @@ function updateBlockDimensionsFromCoords(block) {
   );
   const colEnd = Math.max(1, Math.min(cols, parseInt(block.dataset.colEnd)));
 
-  const left = (colStart - 1) * (cellWidth + 5);
-  const width = (colEnd - colStart + 1) * (cellWidth + 5) - 5;
-  const top = (rowStart - 1) * (cellHeight + 5);
-  const height = (rowEnd - rowStart + 1) * (cellHeight + 5) - 5;
+  // Inset for smaller block size (applied once per edge)
+  const inset = 4;
+  const leftAdjust = 2;
+  const colSpan = colEnd - colStart + 1;
+  const rowSpan = rowEnd - rowStart + 1;
+
+  const grid = document.getElementById("grid");
+  const gridWidth = grid ? grid.clientWidth : 0;
+
+  let left = (colStart - 1) * (cellWidth + 5) + inset - leftAdjust;
+  let width = colSpan * (cellWidth + 5) - 5 - inset * 2;
+  // Clamp width so block never exceeds grid's right edge
+  if (left + width > gridWidth) {
+    width = Math.max(0, gridWidth - left);
+  }
+
+  const top = (rowStart - 1) * (cellHeight + 5) + inset;
+  const height = rowSpan * (cellHeight + 5) - 5 - inset * 1.2;
 
   // check for overlap
   for (const existingBlock of blocks) {

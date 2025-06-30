@@ -31,10 +31,9 @@ main {
 
 /* FEATURE CARDS & HEADER */
 .header-features {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2rem;
-  flex-wrap: wrap;
   margin-top: 3rem;
   max-width: 1200px;
   margin-left: auto;
@@ -45,7 +44,7 @@ main {
   background: var(--feature-card-bg);
   padding: 2rem 1.5rem;
   border-radius: 12px;
-  width: 180px;
+  width: 100%;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;

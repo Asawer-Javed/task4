@@ -1,5 +1,6 @@
-/* RESPONSIVE STYLES FOR ALL SECTIONS */
+/* RESPONSIVE STYLES */
 
+/* 1. GLOBAL/BODY */
 html,
 body {
   width: 100vw;
@@ -77,7 +78,7 @@ body {
   }
 }
 
-/* 3. MAIN HEADING */
+/* 3. MAIN TOOL TOP (Grid Generator, Instructions, Tool Interface) */
 @media (max-width: 812px) {
   .main-heading {
     font-size: 2.5rem;
@@ -88,6 +89,9 @@ body {
   .main-heading {
     font-size: 2.5rem;
     margin-top: 3.5rem;
+  }
+  .tool-interface {
+    margin-right: 1.5rem;
   }
 }
 
@@ -101,7 +105,7 @@ body {
     box-sizing: border-box;
   }
 }
-@media (max-width: 812px) {
+@media (max-width: 900px) {
   .tool-description {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
@@ -111,6 +115,7 @@ body {
   }
   .use-cases {
     padding: 0.7rem 0.3rem;
+    margin-right: 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -120,6 +125,7 @@ body {
     max-width: 100vw;
     width: 100vw;
     box-sizing: border-box;
+    margin-right: 2rem;
   }
 }
 @media (max-width: 600px) {
@@ -132,6 +138,11 @@ body {
   }
   .use-cases {
     padding: 1rem 0.5rem;
+    margin-right: 1.5rem;
+  }
+  .tool-description p {
+    margin: 0.7rem 0.5rem;
+    padding: 0.7rem 0.5rem;
   }
 }
 @media (max-width: 480px) {
@@ -140,61 +151,7 @@ body {
   }
 }
 
-/* 5. CONTROLS */
-@media (max-width: 900px) {
-  .controls {
-    max-width: 100vw;
-    width: 100vw;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-}
-@media (max-width: 812px) {
-  .controls {
-    flex-direction: column;
-    align-items: stretch;
-    max-width: 100vw;
-    width: 100vw;
-    padding: 0.7rem;
-    gap: 0.7rem;
-    margin-left: 0;
-    margin-right: 0;
-    box-sizing: border-box;
-  }
-  .controls label {
-    width: 100%;
-    max-width: 180px;
-    justify-content: space-between;
-    font-size: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  .controls {
-    flex-direction: column;
-    align-items: center;
-    max-width: 100vw;
-    width: 100vw;
-    margin-left: 0;
-    margin-right: 0;
-    box-sizing: border-box;
-  }
-  .controls label {
-    width: 100%;
-    max-width: 200px;
-    justify-content: space-between;
-  }
-}
-@media (max-width: 600px) {
-  .controls {
-    padding: 0.5rem;
-    gap: 0.5rem;
-    max-width: 100vw;
-    width: 100vw;
-    box-sizing: border-box;
-  }
-}
-
-/* 6. GRID & BLOCKS */
+/* 5. GRID & BLOCKS */
 @media (max-width: 1440px) {
   #grid {
     max-width: 100vw;
@@ -224,7 +181,7 @@ body {
   }
 }
 
-/* 7. CODE OUTPUT BOXES */
+/* 6. CODE OUTPUT BOXES */
 @media (max-width: 1440px) {
   .code-container {
     max-width: 100vw;
@@ -278,7 +235,22 @@ body {
   }
 }
 
-/* 9. FOOTER (all breakpoints, desktop to mobile) */
+/* 7. TESTIMONIALS */
+@media (max-width: 900px) {
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .testimonial-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
+
+/* 8. FOOTER */
 @media (max-width: 1200px) {
   .footer-container {
     padding-left: 2vw;
@@ -427,30 +399,8 @@ body {
     padding: 0.3rem 0.3rem 0.1rem 0.3rem;
   }
 }
-@media (max-width: 480px) {
-  .footer-container,
-  .footer {
-    font-size: 0.9rem;
-    padding: 0.5rem 0.2rem;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    box-sizing: border-box;
-  }
-  .footer-left h3,
-  .footer-right h4 {
-    font-size: 1.1rem;
-  }
-  .footer-left p,
-  .social-links span {
-    font-size: 0.95rem;
-  }
-  .footer-bottom {
-    font-size: 0.8rem;
-    padding: 0.3rem 0.3rem;
-  }
-}
 
-/* 10. LOADER */
+/* 9. LOADER */
 @media (max-width: 600px) {
   .loader-card {
     min-width: 90vw;
@@ -464,7 +414,7 @@ body {
   }
 }
 
-/* 11. PREVENT HORIZONTAL SCROLL ON BODY FOR ALL SMALL SCREENS */
+/* 10. PREVENT HORIZONTAL SCROLL ON BODY FOR ALL SMALL SCREENS */
 @media (max-width: 900px) {
   body {
     overflow-x: hidden;

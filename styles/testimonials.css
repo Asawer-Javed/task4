@@ -12,17 +12,18 @@
 }
 
 .testimonial-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: row;
   gap: 1.5rem;
   margin-top: 10px;
   padding: 1rem;
   padding-top: 3rem;
+  overflow-x: auto;
   scroll-behavior: smooth;
-  overflow-x: unset;
 }
 
 .testimonial-card {
+  flex: 0 0 300px;
   background: #00e6a8;
   padding: 2rem 1.2rem;
   border-radius: 12px;
