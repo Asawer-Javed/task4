@@ -59,14 +59,14 @@ body {
     max-width: 100vw;
     width: 100vw;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
     box-sizing: border-box;
   }
 }
 @media (max-width: 900px) {
   .tool-description {
     padding-left: 0.3rem;
-    padding-right: 0.3rem;
+    padding-right: 2rem;
     max-width: 100vw;
     width: 100vw;
     box-sizing: border-box;
@@ -79,7 +79,7 @@ body {
 @media (max-width: 768px) {
   .tool-description {
     padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-right: 2rem;
     max-width: 100vw;
     width: 100vw;
     box-sizing: border-box;
@@ -89,7 +89,7 @@ body {
 @media (max-width: 600px) {
   .tool-description {
     padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-right: 2.5rem;
     max-width: 100vw;
     width: 100vw;
     box-sizing: border-box;
