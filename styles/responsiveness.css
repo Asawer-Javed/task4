@@ -29,54 +29,6 @@ body {
     width: 100vw;
   }
 }
-@media (max-width: 812px) {
-  .header-features {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    max-width: 100vw;
-    width: 100vw;
-  }
-  .feature-card {
-    width: 100%;
-    max-width: 320px;
-    padding: 1rem 0.5rem;
-    font-size: 0.98rem;
-    min-width: 0;
-    box-sizing: border-box;
-  }
-}
-@media (max-width: 768px) {
-  .header-features {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    max-width: 100vw;
-    width: 100vw;
-  }
-  .feature-card {
-    width: 100%;
-    max-width: 350px;
-    min-width: 0;
-    box-sizing: border-box;
-  }
-}
-@media (max-width: 600px) {
-  .feature-card {
-    padding: 1rem 1.2rem;
-    font-size: 0.95rem;
-    min-width: 0;
-    box-sizing: border-box;
-  }
-}
-@media (max-width: 480px) {
-  .intro h1 {
-    font-size: 1rem;
-  }
-  .subtitle {
-    font-size: 0.85rem;
-  }
-}
 
 /* 3. MAIN TOOL TOP (Grid Generator, Instructions, Tool Interface) */
 @media (max-width: 812px) {
