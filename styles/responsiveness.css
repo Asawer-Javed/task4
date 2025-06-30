@@ -30,6 +30,12 @@ body {
   }
 }
 
+@media (max-width: 607px) {
+  .controls {
+    margin-left: 1.2rem;
+  }
+}
+
 /* 3. MAIN TOOL TOP (Grid Generator, Instructions, Tool Interface) */
 @media (max-width: 812px) {
   .main-heading {
